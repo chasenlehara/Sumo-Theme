@@ -25,7 +25,7 @@
 			{{ if .Title }}
 			<span class="p-name"><b>{{ .Title }}</b></span>
 			{{ end }}
-			<span class="p-summary">{{ .Summary | truncate 150 }}</span>
+			<span class="p-summary">{{ .Content | plainify | truncate 150 }}</span>
 		</p>
 
 		{{ end }}
