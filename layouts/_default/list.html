@@ -20,7 +20,7 @@
           {{ end }}
           {{ if .Title }}
               <h2 class="post-title p-name"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                  {{ if in .RawContent "<!--more-->" }}
+                  {{ if in .RawContent "<!--more-->" }}                        
                       <div class="p-summary">
                           {{ $splitContents := split .RawContent "<!--more-->" }}
                           {{ $summary := index $splitContents 0 }}
@@ -35,7 +35,7 @@
                               {{ end }}
                           </button></a></p>
                       </div>
-                  {{ else }}
+                  {{ else }}                  
                       <div class="e-content with-title">
                           {{ .Content }}
                       </div>
