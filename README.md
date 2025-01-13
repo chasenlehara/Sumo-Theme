@@ -1,7 +1,6 @@
 # Sumo Theme for Micro.blog
 ![Sumo Theme for Micro.blog Logo](https://github.com/MattSLangford/Sumo-Theme/blob/main/screenshot_new.png?raw=true)
 
-
 ### Description
 Sumo Theme is developed for use with the Micro.blog platform. It is designed to be as fast as possible while still supporting all features of the platform and popular plugins. It is easy to customize, offering full support for Microhooks.
 
