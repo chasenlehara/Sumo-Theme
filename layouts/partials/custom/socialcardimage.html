@@ -1,0 +1,8 @@
+{{- if .Site.Params.socialCardImage -}}
+{{- $socialCardImage := .Site.Params.socialCardImage | absURL -}}
+<meta name="twitter:image" content="{{ $socialCardImage }}">
+<meta property="og:image" content="{{ $socialCardImage }}">
+{{- else -}}
+<meta name="twitter:image" content="{{ .Site.Author.avatar }}">
+<meta property="og:image" content="{{ .Site.Author.avatar }}">
+{{- end -}}
