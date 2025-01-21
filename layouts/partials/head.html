@@ -14,9 +14,9 @@
   <meta name="twitter:description" content="{{ .Site.Params.itunes_description | truncate 125 }}">
   <meta name="og:description" content="{{ .Site.Params.itunes_description | truncate 60 }}">
   <meta name="description" content="{{ .Site.Params.itunes_description }}">
-  {{ if .Site.params.socialCardImage }}
-  <meta name="twitter:image" content="{{ .Site.params.socialCardImage }}">
-  <meta property="og:image" content="{{ .Site.params.socialCardImage }}">
+  {{ if .Site.Params.socialCardImage }}
+  <meta name="twitter:image" content="{{ .Site.Params.socialCardImage }}">
+  <meta property="og:image" content="{{ .Site.Params.socialCardImage }}">
   {{ else }}
   <meta name="twitter:image" content="{{ .Site.Author.avatar }}">
   <meta property="og:image" content="{{ .Site.Author.avatar }}">

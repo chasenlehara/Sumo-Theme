@@ -22,7 +22,7 @@
 		"type": "string"
     },
 	{
-		"field": "params.cardImage",
+		"field": "params.socialCardImage",
 		"label": "Social Card Image",
 		"placeholder": "Relative URL for FB/X card (default: your avatar)",
 		"type": "string"
