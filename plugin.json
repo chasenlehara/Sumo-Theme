@@ -29,7 +29,7 @@
 	},
 	{
     	"field": "paginate",
-    	"label": "Number of items shown per page in a paginated list",
+    	"label": "Number of items shown per page",
 		"placeholder": 20,
     	"type": "integer"
     }
