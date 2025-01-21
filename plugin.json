@@ -6,26 +6,32 @@
     {
     	"field": "defaultContentLanguage",
     	"label": "Default Content Language",
-    	"placeholder": "en",
+    	"placeholder": "options: it, en, fr, pt, es, ru; default: en",
 		"type": "string"
-    },
-	{
-    	"field": "paginate",
-    	"label": "Paginate",
-		"placeholder": 20,
-    	"type": "integer"
-    },
+    },	
     {
     	"field": "params.dateFormatShort",
-    	"label": "Date Format (Short)",
+    	"label": "Short Date Format",
 		"placeholder": "Jan 2, 2006",
 		"type": "string"
     },
 	{
     	"field": "params.dateFormatLong",
-    	"label": "Date Format (Long)",
+    	"label": "Long Date Format",
 		"placeholder": "January 2, 2006",
 		"type": "string"
+    },
+	{
+		"field": "params.cardImage",
+		"label": "Social Card Image",
+		"placeholder": "Relative URL for FB/X card (default: your avatar)",
+		"type": "string"
+	},
+	{
+    	"field": "paginate",
+    	"label": "Number of items shown per page in a paginated list",
+		"placeholder": 20,
+    	"type": "integer"
     }
 	]
 }
