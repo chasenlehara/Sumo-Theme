@@ -24,7 +24,7 @@
   <meta name="twitter:image" content="{{ . }}">
   <meta property="og:image" content="{{ . }}">
   {{ else }}
-  {{ partial "custom/socialcardimage" . }}
+  {{ partial "custom/socialcardimage" $ }}
   {{ end }}
   <title>{{ block "title" . }}{{ if .IsHome }}{{ .Site.Title }}{{ else if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ delimit (split .Summary " " | first 5) " " }} … | {{ .Site.Title }}{{ end }}{{ end }}</title>
   <link rel="canonical" href="{{ .Permalink }}">
