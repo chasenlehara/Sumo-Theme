@@ -1,37 +1,5 @@
 {
 	"version": "1.1.0",
 	"title": "Sumo Theme",
-	"description": "Sumo Theme is a powerful and opinionated theme available only for Micro.blog. Visit sumo.micro.blog for documentation and demos. Follow @mtt on Micro.blog.",
-	"fields": [
-    {
-    	"field": "defaultContentLanguage",
-    	"label": "Default Content Language",
-    	"placeholder": "options: it, en, fr, pt, es, ru; default: en",
-		"type": "string"
-    },	
-    {
-    	"field": "params.dateFormatShort",
-    	"label": "Short Date Format",
-		"placeholder": "Jan 2, 2006",
-		"type": "string"
-    },
-	{
-    	"field": "params.dateFormatLong",
-    	"label": "Long Date Format",
-		"placeholder": "January 2, 2006",
-		"type": "string"
-    },
-	{
-		"field": "params.socialCardImage",
-		"label": "Social Card Image",
-		"placeholder": "Relative URL for FB/X card (default: your avatar)",
-		"type": "string"
-	},
-	{
-    	"field": "paginate",
-    	"label": "Number of items shown per page",
-		"placeholder": 20,
-    	"type": "integer"
-    }
-	]
+	"description": "Sumo Theme is a powerful and opinionated theme available only for Micro.blog. Visit sumo.micro.blog for documentation and demos. Follow @mtt on Micro.blog."
 }
