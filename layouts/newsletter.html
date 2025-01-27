@@ -55,7 +55,7 @@
 
 	{{ range .Pages }}
 	<div class="post">
-		<a href="{{ .Permalink }}" class="microblog_permalink">{{ .Date.Format "Jan 2, 2006" }} ↓</a>
+		<a href="{{ .Permalink }}" class="microblog_permalink">{{ partial "dateformat/short" . }} ↓</a>
 
 		{{ if .Title }}
 		<h3>{{ .Title }}</h3>
@@ -74,11 +74,11 @@
 
 	<div class="microblog_footer">
 
-		<a href="{{ .Footer.UnsubscribeURL }}">Unsubscribe</a> <span class="microblog_divider">|</span>
+		<a href="{{ .Footer.UnsubscribeURL }}">{{ T "Unsubscribe" }}</a> <span class="microblog_divider">|</span>
 
 		{{ if eq (len .Pages) 1 }}
 		{{ with index .Pages 0 }}
-		<a href="{{ .Permalink }}">View in Browser</a> <span class="microblog_divider">|</span>
+		<a href="{{ .Permalink }}">{{ T "View in browser" }}</a> <span class="microblog_divider">|</span>
 		{{ end }}
 		{{ end }}
 
