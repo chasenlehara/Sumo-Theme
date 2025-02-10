@@ -219,6 +219,11 @@ a:hover {
 	color: var(--main-link);
 }
 
+.post-content a {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
 .without-title p:first-of-type {
 	margin-top: 0;
 }
