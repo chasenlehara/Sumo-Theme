@@ -219,7 +219,7 @@ a:hover {
 	color: var(--main-link);
 }
 
-.post-content a {
+.post-content a, .e-content a {
   word-break: break-word;
   overflow-wrap: break-word;
 }
