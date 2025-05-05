@@ -4,7 +4,7 @@
 	{{ if templates.Exists "partials/microhook-before-replies.html" }}
 	{{ partial "microhook-before-replies.html" . }}
 	{{ end }}
-
+<div class="page">
 	<h2 class="replies-title">{{ T "Recent replies" }}</h2>
 	<div class="post-list">
 		{{ if .Site.Params.paginate_replies }}
@@ -47,7 +47,7 @@
 		{{ end }}
 		{{ end }}
 	</div>
-
+</div>
 	{{ if templates.Exists "partials/microhook-after-replies.html" }}
 	{{ partial "microhook-after-replies.html" . }}
 	{{ end }}
