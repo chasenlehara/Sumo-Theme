@@ -30,15 +30,17 @@
 </div>
 
 <div class="content-meta">
-  {{ if templates.Exists "partials/microhook-categories.html" }}
+{{ if templates.Exists "partials/microhook-categories.html" }}
 {{ partial "microhook-categories.html" . }}
 {{ else }}
 {{ if .Params.categories }}
-<ul class="post-tags">
-  {{ range .Params.categories }} {{ $href := print (absURL "categories/") (urlize .) }}
-  <li><a href="{{ $href }}">{{ . }}</a></li>
-  {{ end }}
-</ul>
+{{ with .GetTerms "categories" }}
+  <ul class="post-tags">
+    {{ range . }}
+      <li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
+    {{ end }}
+  </ul>
+{{ end }}
 {{ end }}
 {{ end }}
 
