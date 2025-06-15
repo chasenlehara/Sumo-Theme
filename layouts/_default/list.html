@@ -27,13 +27,13 @@
                           {{ $summary := replaceRE "\\[\\^.*?\\]" "" $summary }}
                           {{ $summary := replaceRE "\\n\\[\\^.*?\\]:.*" "" $summary }}
                           <p>{{ $summary | markdownify }}</p>
-                          <p><a class="read-more" href="{{ .Permalink }}"><button>
+                          <p><a class="button read-more" href="{{ .Permalink }}">
                               {{ if templates.Exists "partials/microhook-read-more-text.html" }}
                               {{ partial "microhook-read-more-text.html" . }}
                               {{ else }}
                               {{ T "Read more" }} →
                               {{ end }}
-                          </button></a></p>
+                          </a></p>
                       </div>
                   {{ else if .Params.custom_summary }}
                   <div class="p-summary">
@@ -63,12 +63,12 @@
 <div class="post-nav">
     {{ if $paginator.HasPrev }}
     <span class="prev">
-        <a href="{{ $paginator.Prev.URL }}" title="Previous Page"><button>← Newer</button></a>
+        <a class="button" href="{{ $paginator.Prev.URL }}" title="Previous Page">← Newer</a>
     </span>
     {{ end }}
     {{ if $paginator.HasNext }}
     <span class="next">
-        <a href="{{ $paginator.Next.URL }}"><button>Older →</button></a>
+        <a class="button" href="{{ $paginator.Next.URL }}">Older →</a>
     </span>
     {{ end }}
 </div>
