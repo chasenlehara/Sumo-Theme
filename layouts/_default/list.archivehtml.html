@@ -10,7 +10,7 @@
 		<h3>{{ T "Categories" }}</h3>
 		<div class="category-list">
 			{{ range $list }}
-			<a href="{{ .Permalink }}"><button>{{ .Title }}</button></a>
+			<a class="button" href="{{ .Permalink }}">{{ .Title }}</a>
 			{{ end }}
 		</div>
 	</div>
