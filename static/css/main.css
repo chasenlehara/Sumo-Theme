@@ -588,6 +588,12 @@ form.microblog_reply_form {
 	border-radius: 20px;
 }
 
+/* QUOTEBACK EMBEDS */
+quoteback-component {
+	display: block;
+	padding-left: 20px;
+	padding-right: 20px;
+}
 
 /* Tinylytics */
 
