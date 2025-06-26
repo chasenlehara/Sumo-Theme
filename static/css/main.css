@@ -382,6 +382,7 @@ a.button, button, .conversation-on-mb, .reply-on-mastodon, .reply-by-email, inpu
 	transition: background-color 0.1s ease-in;
 	margin: 3px 0;
 	white-space: nowrap;
+	line-height: 2.66em;
 }
 
 a.button:hover, button:hover, .conversation-on-mb:hover, .reply-on-mastodon:hover, .reply-by-email:hover, input:is([type="button"]):hover, [type="submit"]:hover, [type="reset"]:disabled:hover {
