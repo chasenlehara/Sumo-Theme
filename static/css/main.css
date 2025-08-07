@@ -10,14 +10,14 @@
 	--navigation-button-background: ;
 	--navigation-button-border-hover: #000000;
 	--navigation-button-background-hover: #000000;
-	--navigation-text: #8c8c8c;
+	--navigation-text: #757575;
 	--navigation-text-hover: #f0f0f0;
 	--heading-color: #000000;
 	--button-border: #e4e4e4;
 	--button-background: ;
 	--button-border-hover: #000000;
 	--button-background-hover: #000000;
-	--button-text: #8c8c8c;
+	--button-text: #757575;
 	--button-text-hover: #f0f0f0;
 	--hr: #f0f0f0;
 	--blockquote-border: #000000;
@@ -33,7 +33,7 @@
 	--callout: #DDEBF7;
 	--conversation-background: ;
 	--comment-border: #e4e4e4;
-	--footnotes: #8c8c8c;
+	--footnotes: #757575;
 	--footnote-super: #000000;
 	--page-fold: #F5F5F5;
 	--video-placeholder: #fafafa;
@@ -42,6 +42,14 @@
 	--shared-note: #FFF9C4;
 	--red-text: #ff0000;
 	--highlight: #FFFF00;
+}
+
+@media (prefers-contrast: more) {
+	:root {
+		--navigation-text: #595959;
+		--button-text: #595959;
+		--footnotes: #595959;
+	}
 }
 
 /* Font stacks */
@@ -94,13 +102,18 @@ body {
 	text-align: center;
 	padding: 2px;
 	border: 1px solid var(--profile-border);
-	transition: transform 0.3s ease-in-out;
 	width: 100px;
 	height: auto;
 }
 
-.site-header .profile_photo:hover {
-	transform: scale(1.25);
+@media (prefers-reduced-motion: no-preference) {
+	.site-header .profile_photo {
+		transition: transform 0.3s ease-in-out;
+	}
+
+	.site-header .profile_photo:hover {
+		transform: scale(1.25);
+	}
 }
 
 .site-header h1 {
@@ -251,11 +264,17 @@ hr.article-break {
 }
 
 a.post-date, .post-date-wrapper > time, .microblog_time a {
-	opacity: 0.3;
+	opacity: 0.6;
 	transition: opacity 0.1s ease-in;
 	text-transform: uppercase;
 	font-weight: 700;
 	border: none;
+}
+
+@media (prefers-contrast: more) {
+	a.post-date, .post-date-wrapper > time, .microblog_time a {
+		opacity: 0.77;
+	}
 }
 
 a.post-date:hover, .microblog_time a:hover  {
