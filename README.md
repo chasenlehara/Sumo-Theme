@@ -2,12 +2,10 @@
 ![Sumo Theme for Micro.blog Logo](https://github.com/MattSLangford/Sumo-Theme/blob/main/screenshot_new.png?raw=true)
 
 ### Description
-Sumo Theme is developed for use with the Micro.blog platform. It is designed to be as fast as possible while still supporting all features of the platform and popular plugins. It is easy to customize, offering full support for Microhooks.
-
-**Demo and Docs**: sumo.micro.blog
+Sumo Theme is developed for use with the Micro.blog platform. It is an easy-to-use, works out-of-the-box theme with full support for Microhooks and popular plugins. Orginally created by [Matt Langford](https://mattlangford).
 
 ### Credits
-Sumo Theme is created and maintained by [Matt Langford](http://micro.blog/mtt?remote_follow=1) (follow on Micro.blog). If you have bug reports or feature requests, you can submit them [Github](https://github.com/MattSLangford/Tiny-Theme-for-Micro.blog) (make sure you star the repo) or [contact Matt](https://mattlangford.com/about/#contact) directly.
+Sumo Theme was created by [Matt Langford](https://mattlangford.com). Please report all issues on Github.
 
 ## Support Themes by Matt Langford
 Help fund ongoing work on Tiny, Sumo, and Bayou — clean, fast themes for Micro.blog. Your support keeps them updated and free for everyone. Plus, get access to custom ChatGPT powered support.
