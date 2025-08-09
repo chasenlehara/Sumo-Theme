@@ -52,6 +52,47 @@
 	}
 }
 
+@media (prefers-color-scheme: dark) {
+	:root {
+		--main-text: #CCCCCC;
+		--main-link: #C9C9C9;
+		--main-link-hover: #ffffff;
+		--main-link-border: #525252;
+		--main-link-border-hover: #ffffff;
+		--profile-border: #474747;
+		--navigation-button-border: #595959;
+		--navigation-button-border-hover: #ffffff;
+		--navigation-button-background-hover: #ffffff;
+		--navigation-text: #999999;
+		--navigation-text-hover: #474747;
+		--heading-color: #ffffff;
+		--button-border: #595959;
+		--button-border-hover: #ffffff;
+		--button-background-hover: #ffffff;
+		--button-text: #999999;
+		--button-text-hover: #474747;
+		--hr: #474747;
+		--blockquote-border: #ffffff;
+		--blockquote-text: #C9C9C9;
+		--code-border: #595959;
+		--code-background: #080808;
+		--pre-border: #595959;
+		--note: #473400;
+		--alert: #701A1C;
+		--aside: #383838;
+		--callout: #1B3D46;
+		--comment-border: #595959;
+		--footnotes: #999999;
+		--footnote-super: #ffffff;
+		--page-fold: #383838;
+		--video-placeholder: #080808;
+		--comment-form-background-color: #080808;
+		--comment-form-border-color: #080808;
+		--shared-note: #473400;
+		--red-text: #FF6161;
+	}
+}
+
 /* Font stacks */
 :root {
 	--font_system_ui: system-ui, sans-serif;
